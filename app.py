@@ -11,7 +11,7 @@ import smtplib
 load_dotenv()
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://kalu:084612@localhost/pgkacademydb'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DB_CRIDENTIALS')
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 db.init_app(app)
