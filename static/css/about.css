@@ -1,0 +1,75 @@
+body {
+    background-image: url('../images/signup4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Reset default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and text color to the entire page */
+body {
+    background-color: #f8f9fc;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header/navigation bar */
+header {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Style the main content area */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style section headings */
+h1, h2 {
+    color: #00aeff;
+}
+
+
+.intro-section {
+    margin-bottom: 100px;
+}
+
+/* Style paragraphs within sections */
+p {
+    line-height: 1.6;
+}
+
+/* Style team member cards (example) */
+.team-member {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+}
+
+/* Style footer */
+footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Additional styling for other sections can be added as needed */
+
+/* Media query for responsiveness (adjust as needed) */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+}

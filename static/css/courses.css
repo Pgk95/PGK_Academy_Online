@@ -1,0 +1,127 @@
+body {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('../images/course.jpg');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and set font styles for the whole page */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header/navigation section */
+.header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+/* Main content section */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Course details section */
+.course-details h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course-details p {
+    font-size: 16px;
+    color: #020202;
+    margin-bottom: 20px;
+}
+
+.course-details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.course-details li {
+    font-size: 16px;
+    color: #050505;
+    margin-bottom: 10px;
+}
+
+.enroll-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.enroll-button:hover {
+    background-color: #0056b3;
+}
+
+/* Course description section */
+.course-description h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course-description p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Add more styles as needed for additional sections or elements */
+
+/* Footer styling */
+footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styling for links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.coming-soon {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.course-details {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url('static/images/pthon-logo.jpg');
+    background-size: 190px 200px;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login in- PGK Academy online</title>
+    <link rel="stylesheet" href="static/css/signup.css">
+</head>
+<body>
+    <div class="form">
+        <h2>LOGIN</h2>
+        <form method="POST" action="{{ url_for('login') }}">
+            <input type="username" name="username" placeholder="Enter your username here" required>
+            <input type="password" id="password" name="password" placeholder="Enter your Password Here" required>
+            <button class="btnn" type="submit">login</button>
+        </form>
+    </div>
+    <ul><li><a href="/">Return to home</a></li></ul>
+    <script src="static/js/login.js"></script>
+</body>
+</html>

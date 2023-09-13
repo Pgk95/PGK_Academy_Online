@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup - PGK Academy online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+
+</head>
+<body>
+    <div class="form">
+        <h2>Create an Account</h2>
+        <form method="POST" action="{{ url_for('signup') }}">
+            <input type="text" name="fullname" placeholder="Enter you Full name" required>
+            <input type="text" name="username" placeholder="Enter you username" required>
+            <input type="email" name="email" placeholder="Enter Email Here" required>
+            <input type="password" name="password_input" placeholder="Enter Password Here" required>
+            <button class="btnn" type="submit">Sign Up</button>
+        </form>
+        <p class="link">Already have an account? <a href="{{ url_for('login') }}">Log in</a></p>
+    </div>
+    <ul><li><a href="templates/index.html">Return to home</a></li></ul>
+</body>
+</html>
