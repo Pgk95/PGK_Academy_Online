@@ -294,3 +294,7 @@ ul li a:hover{
     padding: 14px 16px;
     color: #faf7f7;
 }
+
+.topnav #delete-account-button {
+    color: #000;
+}

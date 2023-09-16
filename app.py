@@ -3,8 +3,10 @@ from flask import render_template, request, redirect, url_for, flash, session, F
 from flask_bcrypt import Bcrypt
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
-from .contact import send_email
-from .models import User, db
+# from .contact import send_email
+from models import User, db
+import logging
+from flask_login import LoginManager, login_user, login_required, current_user, logout_user
 import os
 import smtplib
 
@@ -59,7 +61,6 @@ def signup():
         db.session.add(new_user)
         db.session.commit()
 
-        flash('Your account has been created!', 'success')
         return redirect(url_for('index'))
 
     return render_template('signup.html')
@@ -78,7 +79,7 @@ def login():
         if user and bcrypt.check_password_hash(user.password_hash, password):
             # Set a session variable to track the user's login status
             session['username'] = username
-            flash(f'Welcome, {username}!', 'success')
+
             return redirect(url_for('index'))
         else:
             print('Login failed. Please check your credentials.', 'error')
@@ -90,8 +91,14 @@ def login():
 def logout():
     # Clear the user's session data to log them out
     session.clear()
-    flash('you have been logged out','success')
+    # flash('you have been logged out','success')
     return redirect(url_for('index'))
+
+
+# Define the route for python course
+@app.route('/python')
+def python():
+    return render_template('python.html')
 
 
 @app.route('/contact', methods=['GET', 'POST'], strict_slashes=False)
@@ -108,6 +115,6 @@ def contact():
         return render_template('contact.html')
 
 
-# Run the flask application ifthis script is executed directly
+# Run the flask application if this script is executed directly
 if __name__ == '__main__':
     app.run(debug=True)
